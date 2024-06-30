@@ -23,7 +23,7 @@ login.addEventListener("submit", (event) => {
       },
     ];
     localStorage.setItem("user", JSON.stringify(user));
-    window.location.href = "../index.html";
+    window.location.href = "/Main/index.html";
   } else {
     alert("Please input again");
   }

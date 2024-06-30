@@ -4,7 +4,7 @@ const login = document.getElementById("login");
 const logout = document.getElementById("logout");
 const welcome = document.getElementById("welcome");
 const user = JSON.parse(localStorage.getItem("user")) || [];
-const url = "https://667d547b297972455f649fa1.mockapi.io/products";
+const url = "https://6640b327a7500fcf1a9e76ff.mockapi.io/products";
 let cart = JSON.parse(localStorage.getItem("CART")) || [];
 
 checkUser();
@@ -36,12 +36,11 @@ function renderProducts(product) {
     prod.innerHTML += `
   <div class="col-md-3 cards">
         <div class="card mt-5" style="width: 18rem">
-        <img src="${item.img}" class="card-img-top" alt="..." />
+        <img src="${item.img}" class="card-img-top" style="object-fit: cover;" alt="..." />
         <div class="card-body">
-            <h3 class="card-title" style = "color: red;">Best Seller</h3>
             <h4 class="card-title product-name">${item.productName}</h4>
             <h5 class="card-text">Price: ${item.price}$</h5>
-            <p class="card-text">Sold: ${item.sold}</p>
+            <p class="card-text">Available products: ${item.size}</p>
         <button class="btn btn-primary" onclick="addToCart(${item.id})" type="submit">Add To Cart</button>
         </div>
         </div>
@@ -52,7 +51,7 @@ function renderProducts(product) {
 
 searchElement.addEventListener("submit", (event) => {
   event.preventDefault();
-  let searchInput = document.getElementById("search-input").value.toUpperCase();
+  let searchInput = document.getElementById("search-input").value;
   let cards = document.querySelectorAll(".cards");
   let productName = document.querySelectorAll(".product-name");
 

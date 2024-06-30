@@ -47,37 +47,19 @@
 
 .form-control,
 .btn-outline-success {
-    background-color: #dad7d7;
+    background-color: #fff;
     /* Ensure form inputs and buttons are visible */
 }
-
-.custom-carousel {
-    max-height: 900px;
-    /* Adjust the height as needed */
-    overflow: hidden;
-}
-
-.custom-carousel .carousel-item img {
-    object-fit: cover;
-    width: 100%;
-}
-
-.carousel-image {
-    height: 100vh;
-    /* Adjust the height to match your carousel height */
-    object-fit: cover;
-    width: 100%;
-}
-
 .hide {
     display: none;
 }
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: rgb(235, 224, 224);
+    background-color: peachpuff;
 }
 
 .footer {
@@ -170,15 +152,16 @@ body {
     }
 }
 
-h1,h2,h3,h4,h5,p{
-    color: rgb(39, 37, 37);
+h1,
+h2,
+h3,
+h4,
+h5{
+    color: rgb(0, 0, 0);
 }
 
-h1,h2{
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    justify-content: center;
+p{
+    color: #0056b3;
 }
 
 .open-button {

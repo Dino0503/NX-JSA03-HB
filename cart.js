@@ -25,10 +25,10 @@ function getDataCart() {
       prod.innerHTML += `
         <div class="col-md-3 cards">
         <div class="card mt-5" style="width: 18rem">
-        <img src="${item.Image}" class="card-img-top" alt="..." />
+        <img src="${item.img}" class="card-img-top" alt="..." />
         <div class="card-body">
-            <h5 class="card-title product-name">${item.ProductName}</h5>
-            <p class="card-text">${item.Price}</p>
+            <h5 class="card-title product-name">${item.productName}</h5>
+            <p class="card-text">${item.price}</p>
             <div class="quantity-controls">
                 <button class="btn btn-secondary btn-sm decrement">-</button>
                 <span class="quantity">0</span>
